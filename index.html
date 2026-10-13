@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#d6d6d6" />
+    <title>Ирина Зотова — веб &amp; моушн дизайнер</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Блок фоновые фигуры -->
+    <div class="shapes-bg">
+        <div class="shape shape-circle-red" data-speed="0.3"></div>
+        <div class="shape shape-circle-outline" data-speed="0.15"></div>
+        <div class="shape shape-square-red" data-speed="0.25"></div>
+        <div class="shape shape-cross" data-speed="0.4"></div>
+    </div>
+
+    <!-- Блок курсор-превью -->
+    <div class="cursor-preview" id="cursorPreview"></div>
+
+    <!-- Блок хедер -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <span class="script">Ирина</span>
+                <span class="bold">ЗОТОВА</span>
+            </a>
+
+            <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <div class="nav-col"><a class="nav-head" href="#portfolio">ПРОЕКТЫ</a></div>
+                <div class="nav-col"><a class="nav-head" href="#about">РЕЗЮМЕ</a></div>
+                <div class="nav-col"><a class="nav-head" href="#services">УСЛУГИ</a></div>
+                <div class="nav-col"><a class="nav-head" href="#contacts">КОНТАКТЫ</a></div>
+                <div class="nav-col"><a class="nav-head" href="#contacts">ОБСУДИТЬ ПРОЕКТ</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Блок hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-meta fade-up">
+                <span class="dot-live">Доступна для проектов</span>
+                <span>Санкт-Петербург · 2026</span>
+            </div>
+
+            <h1 class="hero-display" id="heroTitle">
+                <span class="word" style="--delay: 0.1s">Веб</span>
+                <span class="word" style="--delay: 0.2s">&amp;</span>
+                <span class="word accent" style="--delay: 0.3s">моушн</span>
+                <br>
+                <span class="word" style="--delay: 0.4s">дизайнер</span>
+            </h1>
+
+            <div class="hero-bottom-row">
+                <p class="hero-sub fade-up" style="--delay: 0.9s">
+                    Создаю цифровые пространства, анимацию <br> и айдентику для театральных платформ, культурных институций  и креативных проектов.
+                </p>
+                <div class="hero-avatar" id="heroAvatar">
+                    <img src="images/avatar.jpg" alt="Ирина Зотова" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок marquee 1 -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>
+                <img src="images/icon-web.svg" alt="" loading="lazy" />
+                Веб-дизайн <span class="dot"></span>
+                <img src="images/icon-motion.svg" alt="" loading="lazy" />
+                Моушн-дизайн <span class="dot"></span>
+                <img src="images/icon-brand.svg" alt="" loading="lazy" />
+                Брендинг <span class="dot"></span>
+                <img src="images/icon-theater.svg" alt="" loading="lazy" />
+                Театр <span class="dot"></span>
+                <img src="images/icon-anim.svg" alt="" loading="lazy" />
+                Анимация <span class="dot"></span>
+            </span>
+            <span>
+                <img src="images/icon-web.svg" alt="" loading="lazy" />
+                Веб-дизайн <span class="dot"></span>
+                <img src="images/icon-motion.svg" alt="" loading="lazy" />
+                Моушн-дизайн <span class="dot"></span>
+                <img src="images/icon-brand.svg" alt="" loading="lazy" />
+                Брендинг <span class="dot"></span>
+                <img src="images/icon-theater.svg" alt="" loading="lazy" />
+                Театр <span class="dot"></span>
+                <img src="images/icon-anim.svg" alt="" loading="lazy" />
+                Анимация <span class="dot"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Блок обо мне -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-num">(01)</div>
+                <h2 class="section-title reveal-line" data-reveal>
+                    <span>Обо мне</span>
+                </h2>
+                <div class="section-label">немного контекста</div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="fade-up">
+                        Меня зовут <strong>Ирина Зотова</strong>. Работаю на стыке цифрового дизайна <br>и театрального искусства - создаю сайты, анимацию и айдентику <br>для культурных проектов.
+                    </p>
+                    <p class="fade-up" style="--delay: 0.1s">
+                        Верю, что дизайн - это не украшение, а <span class="highlight">инструмент коммуникации</span>. Каждый проект начинаю с вопроса «зачем», а не «как».
+                    </p>
+
+                    <div class="skills-list fade-up" style="--delay: 0.2s">
+                        <span>Figma</span>
+                        <span>After Effects</span>
+                        <span>Cinema 4D</span>
+                        <span>Webflow</span>
+                        <span>HTML / CSS</span>
+                        <span>Premiere Pro</span>
+                    </div>
+                </div>
+
+                <div class="folder-stats fade-up" style="--delay: 0.2s">
+                    <div class="folder-card" onclick="this.classList.toggle('flipped')">
+                        <div class="folder-card-inner">
+                            <div class="folder-card-front">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">лет опыта</div>
+                            </div>
+                            <div class="folder-card-back">
+                                <div class="back-icon">★</div>
+                                <div class="back-label">Опыт</div>
+                                <div class="back-text">Более 5 лет работаю в дизайне - сайты, анимация, брендинг.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-card" onclick="this.classList.toggle('flipped')">
+                        <div class="folder-card-inner">
+                            <div class="folder-card-front">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                            <div class="folder-card-back">
+                                <div class="back-icon">★</div>
+                                <div class="back-label">Проекты</div>
+                                <div class="back-text">Реализовала более 20 проектов для клиентов из разных отраслей.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-card" onclick="this.classList.toggle('flipped')">
+                        <div class="folder-card-inner">
+                            <div class="folder-card-front">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">брендов</div>
+                            </div>
+                            <div class="folder-card-back">
+                                <div class="back-icon">★</div>
+                                <div class="back-label">Брендинг</div>
+                                <div class="back-text">Создала визуальную айдентику для 12 брендов, включая театры.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-card" onclick="this.classList.toggle('flipped')">
+                        <div class="folder-card-inner">
+                            <div class="folder-card-front">
+                                <div class="stat-number stat-number-img">
+                                    <img src="images/infinity.svg" alt="∞" loading="lazy" />
+                                </div>
+                                <div class="stat-label">любви к деталям</div>
+                            </div>
+                            <div class="folder-card-back">
+                                <div class="back-icon">★</div>
+                                <div class="back-label">Детали</div>
+                                <div class="back-text">Внимание к каждой мелочи делает проекты совершенными.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок marquee 2 -->
+    <div class="marquee">
+        <div class="marquee-track reverse">
+            <span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Что я делаю <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Веб-дизайн <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Моушн <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Брендинг <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Анимация <span class="dot"></span>
+            </span>
+            <span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Что я делаю <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Веб-дизайн <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Моушн <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Брендинг <span class="dot"></span>
+                <img src="images/icon-star.svg" alt="" loading="lazy" />
+                Анимация <span class="dot"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Блок услуги -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-num">(02)</div>
+                <h2 class="section-title reveal-line" data-reveal>
+                    <span>Что я делаю</span>
+                </h2>
+                <div class="section-label"></div>
+            </div>
+
+            <div class="services-list">
+                <div class="service fade-up">
+                    <div class="service-num">01</div>
+                    <div class="service-title">Веб-дизайн</div>
+                    <div class="service-desc">Сайты для театральных платформ и креативных проектов. <br> От структуры до вёрстки.</div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service fade-up" style="--delay: 0.1s">
+                    <div class="service-num">02</div>
+                    <div class="service-title">Моушн-дизайн</div>
+                    <div class="service-desc">Анимации для мультимедийных экранов, заставки, промо-ролики. Синхронизация со светом и звуком.</div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service fade-up" style="--delay: 0.2s">
+                    <div class="service-num">03</div>
+                    <div class="service-title">Брендинг</div>
+                    <div class="service-desc">Айдентика театра, логотипы, полиграфия, афиши и социальные сети.</div>
+                    <div class="service-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок marquee 3 -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Портфолио <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Кейсы <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Проекты <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Работы <span class="dot"></span>
+            </span>
+            <span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Портфолио <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Кейсы <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Проекты <span class="dot"></span>
+                <img src="images/icon-project.svg" alt="" loading="lazy" />
+                Работы <span class="dot"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Блок портфолио -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-num">(03)</div>
+                <h2 class="section-title reveal-line" data-reveal>
+                    <span>Портфолио</span>
+                </h2>
+                <div class="section-label"></div>
+            </div>
+
+            <div class="portfolio-list">
+                <a href="#" class="project fade-up"
+                   data-image="images/preview-01.jpg"
+                   data-label="Сайт театральной платформы">
+                    <div class="project-num">01</div>
+                    <div class="project-title">Сайт театральной платформы</div>
+                    <div class="project-desc">Адаптивный сайт с афишей, билетной системой и медиатекой.</div>
+                    <div class="project-arrow">→</div>
+                </a>
+
+                <a href="#" class="project fade-up"
+                   data-image="images/preview-02.jpg"
+                   data-label="Анимации для экрана"
+                   style="--delay: 0.1s">
+                    <div class="project-num">02</div>
+                    <div class="project-title">Анимации для мультимедийного экрана</div>
+                    <div class="project-desc">Цикл заставок для экрана во время спектаклей. <br>Синхронизация со светом и звуком.</div>
+                    <div class="project-arrow">→</div>
+                </a>
+
+                <a href="#" class="project fade-up"
+                   data-image="images/preview-03.jpg"
+                   data-label="Брендинг театра"
+                   style="--delay: 0.2s">
+                    <div class="project-num">03</div>
+                    <div class="project-title">Брендинг театра</div>
+                    <div class="project-desc">Полный ребрендинг: логотип, айдентика, печатные материалы, афиши.</div>
+                    <div class="project-arrow">→</div>
+                </a>
+
+                <a href="#" class="project fade-up"
+                   data-image="images/preview-04.jpg"
+                   data-label="Айдентика фестиваля"
+                   style="--delay: 0.3s">
+                    <div class="project-num">04</div>
+                    <div class="project-title">Айдентика &amp; анимация фестиваля</div>
+                    <div class="project-desc">Разработка визуального бренда и пакета анимаций для фестиваля мюзикла.</div>
+                    <div class="project-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок marquee 4 -->
+    <div class="marquee">
+        <div class="marquee-track reverse">
+            <span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Процесс работы <span class="dot"></span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Шаг за шагом <span class="dot"></span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Прозрачно <span class="dot"></span>
+            </span>
+            <span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Процесс работы <span class="dot"></span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Шаг за шагом <span class="dot"></span>
+                <img src="images/icon-contact.svg" alt="" loading="lazy" />
+                Прозрачно <span class="dot"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Блок процесс -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-num">(04)</div>
+                <h2 class="section-title reveal-line" data-reveal>
+                    <span>Процесс</span>
+                </h2>
+                <div class="section-label">шаг за шагом</div>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-left fade-up">
+                    <div class="process-intro-title">Процесс<br>в айдентике</div>
+                    <div class="process-intro-label">шаг за шагом</div>
+
+                    <div class="draw-area" id="drawArea">
+                        <canvas id="drawCanvas"></canvas>
+
+                        <div class="draw-hint" id="drawHint">
+                            <span class="hint-headline">Давайте уже сейчас создавать ваш дизайн</span>
+                            <span class="hint-strong">Я за свободу выражения!</span>
+                            <span class="hint-sub">Зажимайте курсор и рисуйте прямо здесь</span>
+                        </div>
+
+                        <button class="clear-btn" id="clearBtn" aria-label="Очистить холст">
+                            Очистить
+                        </button>
+                    </div>
+                </div>
+
+                <div class="process-steps">
+                    <div class="step fade-up">
+                        <div class="step-num">1</div>
+                        <div class="step-title">Поиск визуальных решений</div>
+                        <div class="step-desc">Мудборд, ссылки (примеры дизайна), определение визуального вектора в дизайне.</div>
+                    </div>
+
+                    <div class="step fade-up" style="--delay: 0.1s">
+                        <div class="step-num">2</div>
+                        <div class="step-title">Концепция и дизайн</div>
+                        <div class="step-desc">2–3 варианта логотипа, основанных на первом этапе работы.</div>
+                    </div>
+
+                    <div class="step fade-up" style="--delay: 0.2s">
+                        <div class="step-num">3</div>
+                        <div class="step-title">Финализация лого</div>
+                        <div class="step-desc">Выбранный вариант лого дорабатывается до финальной версии.</div>
+                    </div>
+
+                    <div class="step fade-up" style="--delay: 0.3s">
+                        <div class="step-num">4</div>
+                        <div class="step-title">Guideline</div>
+                        <div class="step-desc">Руководство с правилами использования, цветами и типографикой. Визуализация. Макеты.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок модальное окно -->
+    <div class="cta-modal" id="ctaModal" role="dialog" aria-modal="true" aria-labelledby="ctaTitle">
+        <div class="cta-modal-overlay" id="modalOverlay"></div>
+
+        <div class="cta-modal-box">
+            <div class="modal-shape modal-shape-1"></div>
+            <div class="modal-shape modal-shape-2"></div>
+            <div class="modal-shape modal-shape-3"></div>
+            <div class="modal-shape modal-shape-4"></div>
+
+            <button class="modal-close" id="modalClose" aria-label="Закрыть">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18 18M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <span class="modal-label">свободна для проектов</span>
+            <h3 class="modal-title" id="ctaTitle">
+                Давайте создадим<br>что-то <span class="accent">особенное</span>
+            </h3>
+            <p class="modal-text">
+                Расскажите о вашем проекте — отвечу в течение 24 часов и предложу подходящее решение. Работаю с театрами, культурными институциями и креативными командами.
+            </p>
+
+            <div class="modal-actions">
+                <a href="#contacts" class="modal-btn-primary" id="modalPrimary">
+                    Обсудить проект <span>→</span>
+                </a>
+                <button class="modal-btn-secondary" id="modalSecondary">
+                    Позже
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок контакты -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-num">(05)</div>
+                <h2 class="section-title reveal-line" data-reveal>
+                    <span>Контакты</span>
+                </h2>
+                <div class="section-label"></div>
+            </div>
+
+            <div class="contacts-grid">
+                <div class="contacts-left">
+                    <p class="fade-up" style="font-size: 1.1rem; color: rgba(0,0,0,0.7); line-height: 1.6;">
+                        Готовы обсудить ваш проект? Напишите мне, и мы вместе создадим что-то особенное.
+                    </p>
+
+                    <div class="contact-block fade-up">
+                        <div class="contact-icon">
+                            <img src="images/email-icon.svg" alt="Email" loading="lazy" />
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Email</div>
+                            <div class="value">irinazotova_design@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-block fade-up" style="--delay: 0.1s">
+                        <div class="contact-icon">
+                            <img src="images/phone-icon.svg" alt="Телефон" loading="lazy" />
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Телефон</div>
+                            <div class="value">+7 (999) 123-45-67</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-block fade-up" style="--delay: 0.2s">
+                        <div class="contact-icon">
+                            <img src="images/location-icon.svg" alt="Город" loading="lazy" />
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Город</div>
+                            <div class="value">Санкт-Петербург, Россия</div>
+                        </div>
+                    </div>
+
+                    <div class="socials fade-up" style="--delay: 0.3s">
+                        <a href="#" aria-label="Telegram"><img src="images/tg-icon.svg" alt="Telegram" loading="lazy" /></a>
+                        <a href="#" aria-label="Behance"><img src="images/be-icon.svg" alt="Behance" loading="lazy" /></a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-up" style="--delay: 0.2s"
+                      onsubmit="event.preventDefault(); alert('Спасибо! Я свяжусь с вами в ближайшее время.');">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Как вас зовут?" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="mail@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" placeholder="Расскажите о вашем проекте..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок футер -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">Ирина <span>Зотова</span></div>
+            <div class="footer-meta">© 2026 · Все права защищены</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
